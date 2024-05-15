@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Start */
+
+nav {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+}
+
+.logo span {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+nav .menu-aksi {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu-aksi .form-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-aksi .input-search {
+    max-width: 90%;
+    width: 40rem;
+    height: 30px;
+    background-color: #F1F7FF;
+    font-size: 12px;
+    z-index: 10;
+
+}
+
+.form-search .btn-search {
+    width: 50px;
+    height: 30px;
+    background-color: #007AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 10;
+}
+
+
+.tombol-aksi {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-aksi ul {
+    display: none;
+}
+
+.btn-login {
+    background-color: #F1F7FF;
+    color: #007AFF;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-login:hover {
+    background-color: #c5dcfb;
+    color: #007AFF;
+}
+
+.btn-jual {
+    background-color: #007AFF;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-jual:hover {
+    background-color: #96c9ff;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* End Navbar */
+
+/* Resposive Tablet */
+@media screen and (min-width: 768px) and (max-width: 1110px) {
+    .logo span {
+        display: none;
+    }
+
+    .menu-aksi .input-search {
+        width: 30rem;
+        z-index: 10;
+    }
+
+    .tombol-aksi {
+        display: none;
+    }
+
+    .menu-toggle {
+        background-color: #007AFF;
+        color: #fff;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu-aksi ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #fff;
+        width: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        padding-top: 3rem;
+        height: 50vh;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        border-radius: 0 10px 0;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    .menu-aksi ul li {
+        list-style: none;
+    }
+
+    .menu-aksi ul li:hover {
+        background-color: #c5dcfb;
+        padding: 10px;
+        border-radius: 5px;
+        width: 95%;
+    }
+
+    .menu-aksi ul li a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .menu-aksi ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+
+    }
+}
+
+
+/* Resposive Mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .tombol-aksi {
+        display: none;
+    }
+
+    .menu-aksi .input-search {
+        width: 13rem;
+        font-size: 0.7em;
+        z-index: 10;
+    }
+
+    .form-search .btn-search {
+        width: 30px;
+        z-index: 10;
+    }
+
+    .menu-toggle {
+        background-color: #007AFF;
+        color: #fff;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu-aksi ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #fff;
+        width: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        padding-top: 3rem;
+        height: 50vh;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        border-radius: 0 10px 0;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+
+    .menu-aksi ul li {
+        list-style: none;
+    }
+
+    .menu-aksi ul li:hover {
+        background-color: #c5dcfb;
+        padding: 10px;
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    .menu-aksi ul li a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .menu-aksi ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 5;
+    }
+}
+
+/* Navbar End */
+
+
+/* Hero Start */
+.hero-section {
+    height: 608px;
+}
+
+.hero-img {
+    position: absolute;
+}
+
+.hero-produk {
+    position: relative;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: 120px;
+    left: 144px;
+}
+
+.hero-text {
+    position: relative;
+    color: #FFF;
+    font-size: 18px;
+    left: 144px;
+}
+
+.btn-mj {
+    position: relative;
+    width: 193px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #007AFF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    left: 144px;
+
+    transition: background-color 0.2s ease;
+}
+
+.btn-mj:hover {
+    background: #0062CC;
+}
+
+/* Hero End */
+
+
+/* Kategori Start */
+.kategori4 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #004897;
+    line-height: 120%;
+    margin-right: auto;
+}
+
+.kat4ls-a {
+    text-decoration: none;
+}
+
+.kat4ls-wrapper {
+    color: #004897;
+    font-size: 16px;
+}
+
+.kat4ls-wrapper:hover {
+    color: #2196f3;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.kat4-display {
+    display: flex;
+    justify-content: start;
+}
+
+.kat4-wrapper {
+    text-decoration: none;
+}
+
+.kat4-card img {
+    width: 44.685px;
+    height: 44.685px;
+    transition: background-color 0.2s ease;
+}
+
+.kat4-card img:hover {
+    opacity: 0.8;
+}
+
+a .kat4-card p {
+    font-size: 16px;
+    color: #747576;
+    line-height: 120%;
+}
+
+/* Kategori End */
+
+
+/* Rekomendasi Card Start */
+.rekomen {
+    font-weight: 600;
+    font-size: 32px;
+    color: #004897;
+    line-height: 120%;
+    margin-right: auto;
+}
+
+.rekom-a {
+    text-decoration: none;
+}
+
+.rekomls-wrapper {
+    color: #004897;
+    font-size: 16px;
+}
+
+.rekomls-wrapper:hover {
+    color: #2196f3;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card-start {
+    position: relative;
+    width: 357px;
+    height: 329px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-i {
+    position: relative;
+    width: 317px;
+    height: 181px;
+    top: 19px;
+    left: 20px;
+    object-fit: cover;
+}
+
+.card-start .harga {
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+div .tahun {
+    color: #747474;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-left: 23px;
+}
+
+div .judul {
+    color: #747474;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 23px;
+}
+
+div .loc {
+    color: #747474;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 23px;
+}
+
+.btn-loadmore {
+    border: none;
+    width: 213px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #007AFF;
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-loadmore:hover {
+    background: #0062CC;
+}
+
+/* Rekomendasi Card End */
+
+
+/* Footer Start */
+.footer-start {
+    background: #212121;
+    padding: 64px 115px;
+}
+
+.footcol1 a {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.text-cpr {
+    color: #F5F7FA;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.foot-nav {
+    color: #F5F7FA;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-input {
+    width: 275px;
+    padding: 9px 12px;
+    border-radius: var(--Spacing-1, 8px);
+    background: #4D4D4D;
+}
+
+.footer-input input {
+    border: none;
+    width: 220px;
+    margin-right: 5px;
+    background: #4D4D4D;
+
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-input button {
+    border: none;
+    background: #4D4D4D;
+}
+
+/* Footer End */
+
+
+/* DETAIL-PRODUCT */
+
+/* Breadcrumb Start */
+.breadcrumb-tree {
+    display: inline-block;
+}
+
+.breadcrumb-tree li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.breadcrumb-tree li+li {
+    margin-left: 10px;
+}
+
+.breadcrumb-tree li+li:before {
+    content: '/';
+    display: inline-block;
+    color: #848484;
+    margin-right: 10px;
+}
+
+.breadcrumb-tree li a {
+    color: #848484;
+    text-decoration: none;
+}
+
+.breadcrumb-tree li a:hover {
+    color: #007AFF;
+}
+
+.breadcrumb-tree .aktif {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Breadcrumb End */
+
+
+/* Image Start */
+/* Image End */
+
+
+/* Info Produk Start */
+.ip-title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.ip-harga {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.produk-section2 {
+    border-top: 2px solid #C1C1C1;
+    border-bottom: 2px solid #C1C1C1;
+}
+
+.ip-lokasi {
+    position: relative;
+    width: 100%;
+    gap: 27px;
+}
+
+.icon-lokasi {
+    position: relative;
+    width: 32.89px;
+    height: 24.85px;
+}
+
+.ip-alamat {
+    position: relative;
+    font-size: 18px;
+    color: #6a747b;
+    line-height: 140%;
+}
+
+.ip-kalender {
+    position: relative;
+    width: 100%;
+    gap: 27px;
+}
+
+.icon-kalender {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.ip-tanggal {
+    position: relative;
+    font-size: 18px;
+    color: #6a747b;
+    line-height: 140%;
+}
+
+.ip-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.ip-wrapper button {
+    border: none;
+}
+
+.btn-nego {
+    width: 136px;
+    height: 45px;
+    padding: 4px 21px;
+    border-radius: 10px;
+    background: #007AFF;
+
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-nego:hover {
+    background-color: #2196F3;
+}
+
+.btn-wishlist {
+    width: 55px;
+    height: 45px;
+    padding: 4px 21px;
+    border-radius: 10px;
+    background: #007AFF;
+    transition: background-color 0.2s ease;
+}
+
+.btn-wishlist:hover {
+    background-color: #2196F3;
+}
+
+.btn-wishlist img {
+    margin-top: -3px;
+    margin-left: -5px;
+    width: 25px;
+    height: 14.583px;
+}
+
+/* Info Produk End */
+
+
+/* Detail Info Start */
+.di-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.di-deskripsi {
+    color: #6A747B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/* Detail Info End */
+
+
+/* User Profile Start */
+.up-start {
+    background: #EEE;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.16);
+    padding: 16px 115px;
+}
+
+.up-profile {
+    gap: 32px;
+}
+
+.up-picprofile {
+    width: 81px;
+    height: 81px;
+}
+
+.up-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.up-date {
+    color: #6A747B;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.up-lp a {
+    text-decoration: none;
+    color: #007AFF;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+/* User Profile End */
+
+
+/* WISHLIST */
+
+/* Wishlist Start */
+.wishlist {
+    font-weight: 600;
+    font-size: 32px;
+    color: #000;
+    line-height: 120%;
+}
+
+.card-start-wishlist {
+    position: relative;
+    width: 357px;
+    height: 373px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-start-wishlist .harga {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.card-start-wishlist .remove {
+    margin-right: auto;
+    color: #FF5757;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* Wishlist End */
+
+
+
+
+/* css Responsive */
+@media (max-width: 450px) {
+
+    /* Navbar Start */
+ 
+
+    .button-search {
+        width: 100px !important;
+        height: 34px;
+    }
+
+    .button-search img {
+        width: 15px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .button-wrapper .button-wishlist {
+        width: 40px;
+        height: 30px;
+        border-radius: 7px;
+        background-color: #F1F7FF;
+        border: 1px solid #C1C1C1;
+    }
+
+    .button-wrapper .button-wishlist img {
+        width: 22.17px;
+        height: 20.938px;
+        margin-top: -2px;
+    }
+
+    .button-wrapper2 {
+        margin-top: 5px;
+    }
+
+    .button-wrapper .button-login {
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    .button-wrapper .button-jual {
+        height: 30px;
+        border-radius: 7px;
+    }
+
+    /* Navbar End */
+
+
+    /* Hero Start */
+    .hero-section {
+        height: 165px;
+        z-index: 5;
+    }
+
+    .hero-produk {
+        font-size: 26px;
+        left: 20px;
+        margin-top: 15px;
+    }
+
+    .hero-text {
+        font-size: 10px;
+        left: 20px;
+        margin-top: -5px;
+    }
+
+    .btn-mj {
+        font-size: 10px;
+        width: 103px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        left: 20px;
+        margin-top: -5px;
+    }
+
+    /* Hero End */
+
+
+    /* Kategori Start */
+    .kategori4 {
+        color: #004897;
+        line-height: 120%;
+        font-size: 20px;
+    }
+
+    .kat4ls-wrapper {
+        color: #004897;
+        font-size: 13px;
+        line-height: 120%;
+    }
+
+    .kat4-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kat4-wrapper {
+        margin: 0 20px;
+    }
+
+    .kat4-card img {
+        width: 31.181px;
+        height: 31.182px;
+    }
+
+    a .kat4-card p {
+        font-size: 10px;
+    }
+
+    /* Kategori End */
+
+
+    /* Rekomendasi Card Start */
+    .rekomen {
+        color: #004897;
+        line-height: 120%;
+        font-size: 20px;
+    }
+
+    .rekomls-wrapper {
+        color: #004897;
+        font-size: 13px;
+        line-height: 120%;
+    }
+
+    .card-start {
+        position: relative;
+        width: 175px;
+        height: 210px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 0.5px solid;
+        border-color: #959595;
+    }
+
+    .card-start-hide {
+        display: none;
+    }
+
+    .card-i {
+        position: relative;
+        width: 152px;
+        height: 105px;
+        top: 10px;
+        left: 10px;
+        object-fit: cover;
+    }
+
+    .card-start .harga {
+        font-size: 14px;
+        margin-left: 13px;
+    }
+
+    .card-icon a img {
+        width: 15px;
+        height: 14px;
+        margin-right: 13px;
+        margin-top: -3px;
+    }
+
+    div .tahun {
+        font-size: 12px;
+        margin-left: 13px;
+    }
+
+    div .judul {
+        font-size: 12px;
+        margin-left: -10px;
+        margin-left: 13px;
+    }
+
+    div .loc {
+        font-size: 10px;
+        margin-left: -10px;
+        margin-left: 13px;
+    }
+
+    .btn-loadmore {
+        width: 171px;
+        padding: 10px;
+        border-radius: 5px;
+
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* Rekomendasi Card End */
+
+
+    /* Footer Start */
+    .footer-start {
+        padding: 32px 16px;
+    }
+
+    /* Footer End */
+
+
+    /* DETAIL PRODUK */
+
+    /* Breadcrumb Start */
+    .breadcrumb-tree {
+        display: none;
+    }
+
+    /* Breadcrumb End */
+
+
+    /* Info Produk Start */
+    .ip-title {
+        font-size: 18px;
+    }
+
+    .ip-harga {
+        font-size: 18px;
+    }
+
+    .ip-lokasi {
+        gap: 12px;
+    }
+
+    .icon-lokasi {
+        width: 22.93px;
+        height: 17.337px;
+    }
+
+    .ip-alamat {
+        font-size: 12px;
+    }
+
+    .ip-kalender {
+        gap: 12px;
+    }
+
+    .icon-kalender {
+        width: 22px;
+        height: 22px;
+    }
+
+    .ip-tanggal {
+        font-size: 12px;
+    }
+
+    .ip-wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    .btn-nego {
+        width: 77.627px;
+        height: 24.291px;
+        padding: 2.112px 11.09px;
+        border-radius: 4.225px;
+
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .btn-wishlist {
+        width: 32.741px;
+        height: 24.291px;
+        padding: 2.112px 11.09px;
+        border-radius: 4.225px;
+    }
+
+    .btn-wishlist img {
+        margin-top: -5px;
+        margin-left: -2px;
+        width: 15.994px;
+        height: 9.329px;
+    }
+
+    /* Info Produk End */
+
+
+    /* Detail Info Start */
+    .di-title {
+        font-size: 14px;
+    }
+
+    .di-deskripsi {
+        font-size: 12px;
+    }
+
+    /* Detail Info End */
+
+
+    /* User Profile Start */
+    .up-start {
+        padding: 16px 0px;
+    }
+
+    .up-profile {
+        gap: 16px;
+    }
+
+    .up-picprofile {
+        width: 71px;
+        height: 71px;
+    }
+
+    .up-name {
+        font-size: 14px;
+    }
+
+    .up-date {
+        font-size: 12px;
+    }
+
+    .up-lp a {
+        font-size: 12px;
+    }
+
+    /* User Profile End */
+
+
+    /* WISHLIST */
+
+    /* Wishlist Start */
+    .wishlist {
+        color: #000;
+        line-height: 120%;
+        font-size: 20px;
+    }
+
+    .card-start-wishlist {
+        position: relative;
+        width: 175px;
+        height: 230px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 0.5px solid;
+        border-color: #959595;
+    }
+
+    .card-start-wishlist .harga {
+        font-size: 14px;
+        margin-left: 13px;
+    }
+
+    .card-start-wishlist .remove {
+        font-size: 10px;
+        margin-left: 13px;
+    }
+
+    .card-icon a img {
+        width: 13px;
+        height: 13px;
+    }
+
+    /* Wishlist End */
+}

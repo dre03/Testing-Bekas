@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bekas.id</title>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Logo Title Bar -->
+    <link rel="icon" href="../assets/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="nav-hide navbar-brand" href="../index.html">
+                <img src="../assets/logo.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                Bekas.id</a>
+            <form class="nav-input-hide mx-auto mt-2 mb-2">
+                <input class="input-search me-2" type="search" placeholder="Temukan" aria-label="Temukan">
+                <button class="button-search" type="submit"><img src="../assets/icon-search.svg"
+                        alt="search-icon"></button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="nav-input mx-auto mt-2 mb-2">
+                    <input class="input-search me-2" type="search" placeholder="Temukan" aria-label="Temukan">
+                    <button class="button-search" type="submit"><img src="../assets/icon-search.svg"
+                            alt="search-icon"></button>
+                </form>
+
+                <div class="button-wrapper d-flex">
+                    <a href="/wishlist">
+                        <button class="button-wishlist me-md-4"><img src="../assets/icon-wishlist.svg" alt=""></button>
+                    </a>
+                    <div class="button-wrapper2 d-flex">
+                        <button class="button-login me-md-2 me-2" type="submit">Login</button>
+                        <button class="button-jual" type="submit">Jual</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Breadcrumb Start -->
+    <div class="container mt-sm-3 mt-1">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="breadcrumb-tree">
+                    <li><a href="#">Kategori</a></li>
+                    <li><a href="#">Mobil</a></li>
+                    <li class="aktif">Volkswagen Beetle (2013)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Image Start -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-sm-1" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/detail-product/mobil.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/detail-product/mobil.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/detail-product/mobil.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Image End -->
+
+    <!-- Info Produk Start -->
+    <div class="container mt-sm-4 mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="ip-title">Volkswagen Beetle (2013)</div>
+                <div class="ip-harga mt-2">Rp 200.000.000</div>
+            </div>
+        </div>
+
+        <div class="row py-sm-4 py-3 produk-section2 mt-sm-4 mt-2">
+            <div class="col-sm-8">
+                <div class="ip-lokasi d-flex align-items-center">
+                    <img class="icon-lokasi" alt="" src="../assets/icon-lokasi.svg">
+                    <div class="ip-alamat">Gayungan, Surabaya, Jawa Timur</div>
+                </div>
+                <div class="ip-kalender d-flex align-items-center mt-sm-3 mt-2">
+                    <img class="icon-kalender" alt="" src="../assets/icon-kalender.svg">
+                    <div class="ip-tanggal">19 Oktober 2024</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 ip-wrapper align-items-center mt-3">
+                <button type="button" class="btn-nego me-2">Nego</button>
+                <button type="button" class="btn-wishlist"><img src="../assets/icon-wishlist-ip.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!-- Info Produk End -->
+
+    <!-- Detail Info Start -->
+    <div class="container mt-sm-4 mt-3">
+        <div class="row">
+            <div class="col-12">
+                <p class="di-title">Detail Informasi</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="di-deskripsi">Daihatsu terios th 2014 MT <br>
+                    Siap.pakai <br>
+                    Pajak.on <br>
+                    Silahkan kunjungi <br>
+                    Showroom kami <br>
+                    ARJUNA MOTOR DEALER MOBIL BEKAS <br>
+                    jln raya jatiwaringin no 2 pangkalan jati kalimalang Jakarta timur <br> <br>
+
+                    IG #ARJUNAMOTOROFFICIAL <br>
+                    YouTube ARJUNA MOTOR <br>
+                    Buka tiap hari <br>
+                    Jam 9 pagi sampai <br>
+                    Jam 7 malam <br> <br>
+
+                    Note: <br>
+                    Mobil yg kami tawarkan semua dalam kondisi baik dan siap pakai serta jaminan bebas banjir dan
+                    tabrakan <br>
+                    Surat2 di jamin keaslian dan ke absahannya <br>
+                    Kami hanya melayani cash dan Terima tuker tambah <br>
+                    Silahkan bapak /ibu datang melihat kondisi mobil. Kalau sudah cocok harga bisa NEGO di tempat</p>
+            </div>
+        </div>
+    </div>
+    <!-- Detail Info End -->
+
+    <!-- User Profile Start -->
+    <div class="container-fluid mt-sm-4 mt-3">
+        <div class="row up-start">
+            <div class="col-12">
+                <div class="up-profile d-flex align-items-center">
+                    <img class="up-picprofile" alt="" src="../assets/pic-profile.svg">
+                    <div class="up-userinfo">
+                        <div class="up-name">Yusuf</div>
+                        <div class="up-date">Anggota sejak Oktober 2023</div>
+                        <div class="up-lp"><a href="#">Lihat Profil</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Profile End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid mt-sm-5 mt-4">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 border-top footer-start">
+            <div class="col-lg-4 mb-3 footcol1">
+                <a href="../index.html" class="d-flex align-items-center mb-3 text-decoration-none">
+                    <img src="../assets/logo.svg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">Bekas.id
+                </a>
+                <div class="text-cpr mt-4">Copyright © 2024 Virtual Intership 4.</div>
+                <div class="text-cpr">All rights reserved</div>
+                <div class="footer-sosmed mt-4">
+                    <a href="#"><img src="../assets/icon-ig.svg" alt="" class="icon-sosmed me-2"></a>
+                    <a href="#"><img src="../assets/icon-dribble.svg" alt="" class="icon-sosmed me-2"></a>
+                    <a href="#"><img src="../assets/icon-twitter.svg" alt="" class="icon-sosmed me-2"></a>
+                    <a href="#"><img src="../assets/icon-yt.svg" alt="" class="icon-sosmed"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <h5 class="footer-title">Kategori</h5>
+                <ul class="nav flex-column mt-3">
+                    <li class="nav-item mb-2"><a href="#" class="foot-nav p-0 text-decoration-none">Mobil</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="foot-nav p-0 text-decoration-none">Motor</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="foot-nav p-0 text-decoration-none">Elektronik</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="foot-nav p-0 text-decoration-none">Properti</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 mb-3">
+                <h5 class="footer-title">Stay up to date</h5>
+                <form class="footer-input d-flex mt-4">
+                    <input class="input-email" type="email" placeholder="Your email address" aria-label="Email">
+                    <button class="btn-send" type="submit"><img src="../assets/icon-send.svg" alt=""></button>
+                </form>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Js Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
