@@ -219,10 +219,10 @@ nav .menu-aksi {
 
 
 .card{
-    max-width: 367px;
-    width: 100%;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2rem;
+    
 }
 
 .harga {
