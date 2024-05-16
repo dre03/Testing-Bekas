@@ -787,6 +787,7 @@ div .loc {
     /* Start Hero */
     .hero-section {
         height: 165px;
+        margin-bottom: 5rem;
     }
 
     .hero-section .hero-img{
@@ -803,15 +804,15 @@ div .loc {
     .hero-text {
         font-size: 12px;
         left: 2.5rem;
+        margin-bottom: 5px;
     }
 
     .btn-mj {
-        width: 100px;
-        left: 0;
-        font-size: 12px;
+        width: auto;
+        left: 2.5rem;
+        font-size: 10px;
+        padding: 5px;
     }
-
-
 
     /* End Hero */
 }
