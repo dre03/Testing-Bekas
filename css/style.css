@@ -218,11 +218,10 @@ nav .menu-aksi {
 }
 
 
-.card{
+.card {
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 2rem;
-    
 }
 
 .harga {
@@ -255,7 +254,6 @@ nav .menu-aksi {
     padding: 10px 20px;
     border-radius: 10px;
     background: #007AFF;
-
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -791,14 +789,126 @@ nav .menu-aksi {
         font-size: 16px;
         color: #747576;
     }
+
     /* Categorie */
 
     /* Rekomen */
 
-    .rekomen{
+    .rekomen {
         font-size: 16px;
         margin-right: 3rem;
         left: 2rem;
     }
+
+    .rekomls-wrappe {
+        font-size: 10px;
+    }
+
+
+    .card {
+        margin-top: 0;
+        margin-top: 1rem;
+    }
+
+    .harga {
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .icon-wishlist svg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 2px;
+    }
+
+    .tahun {
+        color: #747474;
+        font-size: 10px;
+        font-weight: none;
+        margin-top: -12px;
+    }
+
+    .name {
+        color: #747474;
+        font-size: 10px;
+        font-weight: none;
+    }
+
+    .location {
+        color: #747474;
+        font-size: 10px;
+        font-weight: none;
+    }
+
     /* Rekomen */
+
+
+    /* more */
+    .btn-loadmore {
+        width: auto;
+        padding: 6px;
+        border-radius: 4px;
+        background: #007AFF;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 0;
+        transition: background-color 0.2s ease;
+    }
+
+    /* more */
+
+
+    /* Footer Start */
+    .footcol1 a {
+        font-size: 24px;
+        font-weight: 600;
+        right: 20px;
+    }
+
+    .text-cpr {
+        color: #F5F7FA;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-title {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .foot-nav {
+        color: #F5F7FA;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-input {
+        width: 275px;
+        padding: 9px 12px;
+        border-radius: var(--Spacing-1, 8px);
+        background: #4D4D4D;
+    }
+
+    .footer-input input {
+        border: none;
+        width: 220px;
+        margin-right: 5px;
+        background: #4D4D4D;
+
+        color: var(--Text-Gray-300, #D9DBE1);
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-input button {
+        border: none;
+        background: #4D4D4D;
+    }
+
+    /* Footer End */
 }
