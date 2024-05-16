@@ -173,25 +173,6 @@ nav .menu-aksi {
     margin-right: auto;
 }
 
-.kat4ls-a {
-    text-decoration: none;
-}
-
-.kat4ls-wrapper {
-    color: #004897;
-    font-size: 16px;
-}
-
-.kat4ls-wrapper:hover {
-    color: #2196f3;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.kat4-display {
-    display: flex;
-    justify-content: start;
-}
-
 .kat4-wrapper {
     text-decoration: none;
 }
@@ -676,7 +657,7 @@ div .loc {
         height: 350px;
     }
 
-    .hero-section .hero-img{
+    .hero-section .hero-img {
         margin-top: 3rem;
     }
 
@@ -790,7 +771,7 @@ div .loc {
         margin-bottom: 5rem;
     }
 
-    .hero-section .hero-img{
+    .hero-section .hero-img {
         margin-top: 4rem;
     }
 
@@ -812,7 +793,16 @@ div .loc {
         left: 2.5rem;
         font-size: 10px;
         padding: 5px;
+        border-radius: 5px;
     }
 
     /* End Hero */
+
+    /* Categorie */
+    .title-categorie {
+        font-size: 16px;
+        margin-right: 3rem;
+    }
+
+    /* Categorie */
 }
