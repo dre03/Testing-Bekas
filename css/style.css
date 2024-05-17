@@ -224,6 +224,10 @@ nav .menu-aksi {
     margin-top: 2rem;
 }
 
+.card img{
+    padding: 15px 
+}
+
 .harga {
     font-weight: 600;
     font-size: 24px;
@@ -804,42 +808,50 @@ nav .menu-aksi {
         font-size: 10px;
     }
 
-
     .card {
-        margin-top: 0;
+        position: relative;
         margin-top: 1rem;
+        width: 160px;
     }
+
+    .card img{
+        padding: 5px;
+    }
+
 
     .harga {
         font-weight: bold;
         font-size: 10px;
+        margin-top: -12px;
     }
 
     .icon-wishlist svg {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 10px;
+        right: 10px;
         background-color: #fff;
         padding: 2px;
         border-radius: 2px;
+        width: 10px;
+        height: 10px;
     }
 
     .tahun {
         color: #747474;
         font-size: 10px;
         font-weight: none;
-        margin-top: -12px;
     }
 
     .name {
         color: #747474;
         font-size: 10px;
         font-weight: none;
+        overflow: hidden;
     }
 
     .location {
         color: #747474;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: none;
     }
 
@@ -859,56 +871,4 @@ nav .menu-aksi {
     }
 
     /* more */
-
-
-    /* Footer Start */
-    .footcol1 a {
-        font-size: 24px;
-        font-weight: 600;
-        right: 20px;
-    }
-
-    .text-cpr {
-        color: #F5F7FA;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .footer-title {
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 28px;
-    }
-
-    .foot-nav {
-        color: #F5F7FA;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .footer-input {
-        width: 275px;
-        padding: 9px 12px;
-        border-radius: var(--Spacing-1, 8px);
-        background: #4D4D4D;
-    }
-
-    .footer-input input {
-        border: none;
-        width: 220px;
-        margin-right: 5px;
-        background: #4D4D4D;
-
-        color: var(--Text-Gray-300, #D9DBE1);
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .footer-input button {
-        border: none;
-        background: #4D4D4D;
-    }
-
-    /* Footer End */
 }
