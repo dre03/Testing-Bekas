@@ -52,7 +52,7 @@ nav .menu-aksi {
 
 .menu-aksi .input-search {
     max-width: 90%;
-    width: 40rem;
+    width: 35rem;
     height: 30px;
     background-color: #F1F7FF;
     font-size: 12px;
@@ -61,7 +61,7 @@ nav .menu-aksi {
 }
 
 .form-search .btn-search {
-    width: 50px;
+    width: 45px;
     height: 30px;
     background-color: #007AFF;
     display: flex;
@@ -832,8 +832,8 @@ nav .menu-aksi {
         background-color: #fff;
         padding: 2px;
         border-radius: 2px;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
     }
 
     .tahun {
