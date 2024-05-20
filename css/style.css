@@ -938,8 +938,12 @@ nav .menu-aksi {
     }
 
     .kat4-card img {
-        width: 30px;
-        height: 30;
+        width: 25px;
+        height: auto;
+    }
+
+    .kat4-card p{
+        font-size: 8px;
     }
 
     /* Categorie */
