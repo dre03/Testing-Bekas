@@ -765,12 +765,11 @@ nav .menu-aksi {
     body {
         max-width: 100%;
         width: 100%;
-        height: auto;
         overflow-x: hidden;
     }
 
-    nav {
-        padding: 0 10px;
+    nav{
+        gap: 18px;
     }
 
     .logo span {
