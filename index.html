@@ -40,7 +40,7 @@
             <!-- </div> -->
             <div class="tombol-aksi">
                 <a href="#" class="btn-sm"><img src="/assets/icon-wishlist.svg" alt=""></a>
-                <button class="btn btn-login">Login</button>
+                <button class="btn btn-login openModalLogin">Login</button>
                 <button class="btn btn-jual">Jual</button>
             </div>
             <ul id="slide">
@@ -68,7 +68,7 @@
                         <span>Login</span>
                     </a>
                 </li>
-                <li><a href="#">
+                <li class="openModalLogin"><a href="#">
                         <i class="bi bi-box-arrow-in-left"></i>
                         <span>Login</span>
                     </a>
@@ -78,6 +78,116 @@
         <button class="btn menu-toggle"><i class="bi bi-list"></i></button>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Modal Login -->
+    <!-- <div id="modalLogin" class="modalLogin">
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <img src="assets/pic-login.svg" alt="" class="img-login">
+            </div>
+            <div class="flex-item-right">
+                <h2 class="mt-5 text-center">Login</h2>
+                <form class="form-login">
+                    <div class="mb-3 mt-2">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="" style="width: 95%;"
+                            placeholder="user@emai.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Password</label>
+                        <div class="password-container">
+                            <input type="password" class="form-control" id="password" style="width: 95%;">
+                            <i class="bi bi-eye toggle-password"></i>
+                        </div>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4" style="width: 95%;">Log in</button>
+                </form>
+                <p class="mt-4 text-center">Or login with</p>
+                <a href="#" class="btn btn-google"><img src="assets/icon-google.svg" alt="" class="me-2">Continue
+                    with google</a>
+                <p class="mt-4 text-center">Dont have account? <a href="#" class="create-account">Create an
+                        account</a></p>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="modalLogin" class="modalLogin">
+        <div class="modal-content">
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <img src="assets/pic-login.svg" alt="" class="img-login">
+                </div>
+                <div class="flex-item-right">
+                    <h2 class="mt-5 text-center">Login</h2>
+                    <form class="form-login">
+                        <div class="mb-2 mt-2">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="user@emai.com">
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="password-container">
+                                <input type="password" class="form-control" id="password">
+                                <i class="bi bi-eye toggle-password"></i>
+                            </div>
+                        </div>
+                        <div class="forgot">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3 btnLogin">Log in</button>
+                    </form>
+                    <p class="mt-3 text-center">Or login with</p>
+                    <a href="#" class="btn btn-google"><img src="assets/icon-google.svg" alt="" class="me-2">
+                        <span>Continue with google</span>
+                    </a>
+                    <p class="mt-3 text-center">Don't have an account? <a href="#" class="create-account">Create an
+                            account</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-sm">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img src="assets/pic-login.svg" alt="" class="img-login">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-13">
+                        <h2 class="mt-5 text-center">Login</h2>
+                        <form class="form-login">
+                            <div class="mb-3 mt-2">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="" style="width: 95%;" placeholder="user@emai.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Password</label>
+                                <div class="password-container">
+                                    <input type="password" class="form-control" id="password" style="width: 95%;">
+                                     <i class="bi bi-eye toggle-password"></i>
+                                </div>
+                            </div>
+                            <div class="forgot">
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-4" style="width: 95%;">Log in</button>
+                        </form>
+                        <p class="mt-4 text-center">Or login with</p>
+                        <a href="#" class="btn btn-google"><img src="assets/icon-google.svg" alt="" class="me-2">Continue with google</a>
+                        <p class="mt-4 text-center">Dont have account? <a href="#" class="create-account">Create an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Modal Login -->
 
     <!-- Hero Start -->
     <div class="hero-section">
@@ -303,7 +413,7 @@
     <!-- Rekomendasi Card Start -->
     <div class="row mt-5">
         <div class="col-12 d-flex justify-content-center">
-            <button class="btn-loadmore" type="submit">Load More</button>
+            <button class="btn-loadmore" type="submit">Selengkapnya</button>
         </div>
     </div>
 
@@ -352,12 +462,49 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Js -->
+    <script src="../js/iconpass.js"></script>
     <script>
         $(document).ready(function () {
             $('.menu-toggle').click(function () {
                 $('#slide').toggleClass('slide')
             })
         })
+
+
+        let btns = document.getElementsByClassName("openModalLogin");
+        let modal = document.getElementById("modalLogin");
+
+        for (let i = 0; i < btns.length; i++) {
+            let btn = btns[i];
+            
+            // Ketika pengguna mengklik tombol, buka modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+        }
+        // Ketika pengguna mengklik di luar modal, tutup modal
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+
+
+
+        document.querySelector('.toggle-password').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const passwordIcon = this;
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.classList.remove('bi-eye');
+                passwordIcon.classList.add('bi-eye-slash');
+            } else {
+            passwordInput.type = 'password';
+            passwordIcon.classList.remove('bi-eye-slash');
+            passwordIcon.classList.add('bi-eye');
+            }
+        });
     </script>
 </body>
 

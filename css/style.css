@@ -165,6 +165,90 @@ nav .menu-aksi {
 
 /* Hero End */
 
+/* start modal Login */
+
+.modalLogin {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 800px;
+    margin: 2rem auto 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 90%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.flex-item-left {
+    flex: 45%;
+}
+
+.flex-item-right {
+    flex: 45%;
+}
+
+.img-login {
+    max-width: 100%;
+    width: 100%;
+    height: 80.5%;
+    object-fit: cover;
+}
+
+.form-login input {
+    background-color: #F2F4F8;
+    width: 95%;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.btn-google {
+    border: 2px solid #000;
+    padding: 3px 0;
+    width: 95%;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.form-login .forgot a {
+    color: #001D6C;
+    text-decoration: none;
+}
+
+.create-account {
+    color: #001D6C;
+    text-decoration: none;
+}
+
+
+/* End modal login */
+
 
 /* Kategori Start */
 .title-categorie {
@@ -270,6 +354,12 @@ nav .menu-aksi {
 }
 
 /* Rekomendasi Card End */
+
+/* Login Start */
+
+
+
+/* Login End */
 
 
 /* Footer Start */
@@ -786,6 +876,59 @@ nav .menu-aksi {
 
     /* End Hero */
 
+    /* start Modal login css */
+
+    .img-login {
+        width: 100%;
+        height: 120px;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 75% ;
+        margin-top: 4rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .flex-item-right{
+        padding-left: 30px;
+    }
+
+    .form-login input {
+        width: 90%;
+        font-size: 11px;
+    }
+
+    .btnLogin{
+        font-size: 11px;
+        width: 90%;
+    }
+
+    .toggle-password {
+        right: 40px;
+    }
+
+    .btn-google {
+        border: 1px solid #000;
+        width: 90%;
+        font-size: 11px;
+    }
+    .btn-google img{
+        width: 15px;
+    }
+
+    .flex-item-right, p{
+        font-size: 11px;
+    }
+
+  
+
+    /* end modal login css */
+
     /* Categorie */
     .title-categorie {
         font-size: 16px;
@@ -879,4 +1022,6 @@ nav .menu-aksi {
     }
 
     /* more */
+
+
 }
