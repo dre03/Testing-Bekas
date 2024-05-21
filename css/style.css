@@ -16,12 +16,14 @@ body {
 /* Navbar Start */
 
 nav {
+    max-width: 100%;
     display: flex;
     background-color: #fff;
     justify-content: space-between;
     padding: 0 30px;
     height: 70px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -781,7 +783,7 @@ nav .menu-aksi {
 /* Resposive Mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     nav{
-        padding: 0 10px;
+        width: 100%;
         height: 50px;
     }
 
@@ -949,7 +951,7 @@ nav .menu-aksi {
 
     /* Categorie */
     .container{
-        margin-top: 3rem;
+        margin-top: 7rem;
     }
     .title-categorie {
         font-size: 16px;
