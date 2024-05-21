@@ -74,7 +74,7 @@
     </nav>
     <!-- Navbar End -->
     <!-- Modal Login -->
-    <div id="modalLoginn" class="modalLogin">
+    <div id="modalLogin" class="modalLogin">
         <div class="modal-content">
             <div class="flex-container">
                 <div class="flex-item-left">
@@ -107,7 +107,7 @@
                     <a href="#" class="btn btn-google"><img src="assets/icon-google.svg" alt="" class="me-2">
                         <span>Continue with google</span>
                     </a>
-                    <p class="mt-3 text-center">Belum punya akun? <a href="#" class="create-account">Buat Akun</a></p>
+                    <p class="mt-3 text-center">Belum punya akun? <span type="button" class="create-account">Buat Akun</span></p>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
     <!-- Modal Login -->
 
     <!-- Modal Register -->
-    <div id="modalLogin" class="modalLogin">
+    <div id="modalLRegis" class="modalLogin">
         <div class="modal-content">
             <div class="flex-container">
                 <div class="flex-item-left">
@@ -156,7 +156,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary mt-2 btnLogin">Buat Akun</button>
                     </form>
-                    <p class="mt-2 text-center">Sudah punya akun? <a href="#" class="create-account">Login</a></p>
+                    <p class="mt-2 text-center">Sudah punya akun? <span type="button" class="openModalLogin create-account">Login</span></p>
                 </div>
             </div>
         </div>
@@ -452,23 +452,48 @@
         })
 
 
-        let btns = document.getElementsByClassName("openModalLogin");
-        let modal = document.getElementById("modalLogin");
+        document.addEventListener('DOMContentLoaded', function() {
+            let btnLogin = document.getElementsByClassName("openModalLogin");
+            let modalLogin = document.getElementById("modalLogin");
+            let btnRegis = document.getElementsByClassName("create-account");
+            let modalLRegis = document.getElementById("modalLRegis");
 
-        for (let i = 0; i < btns.length; i++) {
-            let btn = btns[i];
-
-            // Ketika pengguna mengklik tombol, buka modal
-            btn.onclick = function () {
+            function openModal(modal) {
                 modal.style.display = "block";
             }
-        }
-        // Ketika pengguna mengklik di luar modal, tutup modal
-        window.onclick = function (event) {
-            if (event.target == modal) {
+
+            function closeModal(modal) {
                 modal.style.display = "none";
             }
-        }
+
+            // Event listeners for opening the login modal
+            for (let i = 0; i < btnLogin.length; i++) {
+                let btn = btnLogin[i];
+                btn.onclick = function () {
+                    openModal(modalLogin);
+                }
+            }
+
+            // Event listeners for opening the register modal
+            for (let i = 0; i < btnRegis.length; i++) {
+                let btn = btnRegis[i];
+                btn.onclick = function () {
+                    closeModal(modalLogin);
+                    openModal(modalLRegis);
+                }
+            }
+
+            // Event listener to close modals when clicking outside of them
+            window.onclick = function (event) {
+                if (event.target === modalLogin) {
+                    closeModal(modalLogin);
+                } else if (event.target === modalLRegis) {
+                    closeModal(modalLRegis);
+                }
+            }
+        });
+
+
 
 
 
