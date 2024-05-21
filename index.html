@@ -390,6 +390,13 @@
             $('.menu-toggle').click(function () {
                 $('#slide').toggleClass('slide')
             })
+
+            $(document).click(function (event) {
+                // Check if the click was outside of the #slide and .menu-toggle elements
+                if (!$(event.target).closest('.menu-toggle, #slide').length) {
+                    $('#slide').removeClass('slide');
+                }
+            });
         })
 
 
