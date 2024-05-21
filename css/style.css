@@ -190,7 +190,7 @@ nav .menu-aksi {
     border-radius: 5px;
     width: 50%;
     max-width: 800px;
-    margin: 2rem auto 0;
+    margin: 1rem auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: auto;
 }
@@ -213,8 +213,29 @@ nav .menu-aksi {
     max-width: 100%;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    position: relative;
 }
+
+.atas{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+    font-size: 34px;
+}
+
+.atas img{
+    width: 70px;
+}
+
 
 .form-login{
     font-size: 12px;
@@ -916,20 +937,38 @@ nav .menu-aksi {
 
     /* start Modal login css */
 
-    .img-login {
-        width: 100%;
+    .img-login{
         height: 120px;
+
+    }
+
+    .atas {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+    .atas img {
+        width: 50px;
+    }
+
+    .modalLogin{
+        display: block;
+        height: 10px;
     }
 
     .modal-content {
         width: 80%;
-        height: 70%;
         margin-top: 4rem;
     }
 
     .flex-container {
         flex-direction: column;
         gap: 0;
+    }
+
+    .flex-item-left{
+        flex: 100%;
     }
 
     .flex-item-right {
@@ -957,7 +996,7 @@ nav .menu-aksi {
     }
 
     .btn-google img {
-        width: 15px;
+        width: 15px
     }
 
     .flex-item-right,
