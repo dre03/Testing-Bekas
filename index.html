@@ -76,6 +76,7 @@
     <!-- Modal Login -->
     <div id="modalLogin" class="modalLogin">
         <div class="modal-content">
+            <span class="close-modal">&times;</span>
             <div class="flex-container">
                 <div class="flex-item-left">
                     <img src="assets/img-loginT.jpg" alt="" class="img-login">
@@ -117,6 +118,7 @@
     <!-- Modal Register -->
     <div id="modalLRegis" class="modalLogin">
         <div class="modal-content">
+            <span class="close-modal">&times;</span>
             <div class="flex-container">
                 <div class="flex-item-left">
                     <img src="assets/img-loginT.jpg" alt="" class="img-login">
@@ -491,9 +493,16 @@
                     closeModal(modalLRegis);
                 }
             }
+
+            document.querySelectorAll('.close-modal').forEach(function(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    closeModal(modalLogin);
+                    closeModal(modalLRegis);
+                });
+            });  
         });
 
-
+        
 
 
 
