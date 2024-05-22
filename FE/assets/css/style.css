@@ -372,17 +372,13 @@ nav .menu-aksi {
     margin-top: 2rem;
 }
 
-.card-body {
-    padding-bottom: 0 !important;
-}
-
 .card img {
-    padding: 10px 10px 0;
+    padding: 15px
 }
 
 .harga {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .tahun {
@@ -484,22 +480,45 @@ nav .menu-aksi {
     background: #4D4D4D;
 }
 
-.breadcrumb-item a {
-    text-decoration: none;
-    color: #848484
-}
-
 /* Footer End */
 
 
 /* DETAIL-PRODUCT */
 
 /* Breadcrumb Start */
+.breadcrumb-tree {
+    display: inline-block;
+}
 
-.path {
+.breadcrumb-tree li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.breadcrumb-tree li+li {
+    margin-left: 10px;
+}
+
+.breadcrumb-tree li+li:before {
+    content: '/';
+    display: inline-block;
+    color: #848484;
+    margin-right: 10px;
+}
+
+.breadcrumb-tree li a {
+    color: #848484;
     text-decoration: none;
-    margin-top: 4rem;
-    margin-left: 4rem;
+}
+
+.breadcrumb-tree li a:hover {
+    color: #007AFF;
+}
+
+.breadcrumb-tree .aktif {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* Breadcrumb End */
@@ -524,17 +543,9 @@ nav .menu-aksi {
     line-height: 120%;
 }
 
-.line-detail {
-    margin: auto;
-    border: 2px solid #c1c1c1
-}
-
-.deskripsi-detail {
-    font-weight: 600;
-}
-
-.label-desk {
-    font-weight: 600;
+.produk-section2 {
+    border-top: 2px solid #C1C1C1;
+    border-bottom: 2px solid #C1C1C1;
 }
 
 .ip-lokasi {
@@ -584,6 +595,43 @@ nav .menu-aksi {
     border: none;
 }
 
+.btn-nego {
+    width: 136px;
+    height: 45px;
+    padding: 4px 21px;
+    border-radius: 10px;
+    background: #007AFF;
+
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-nego:hover {
+    background-color: #2196F3;
+}
+
+.btn-wishlist {
+    width: 55px;
+    height: 45px;
+    padding: 4px 21px;
+    border-radius: 10px;
+    background: #007AFF;
+    transition: background-color 0.2s ease;
+}
+
+.btn-wishlist:hover {
+    background-color: #2196F3;
+}
+
+.btn-wishlist img {
+    margin-top: -3px;
+    margin-left: -5px;
+    width: 25px;
+    height: 14.583px;
+}
 
 /* Info Produk End */
 
@@ -774,11 +822,10 @@ nav .menu-aksi {
     /* End Hero */
 
     /* Login */
-    .modal-content {
+    .modal-content{
         width: 85%;
         margin-top: 5rem;
     }
-
     /* Login */
 
     /* Kategori */
@@ -787,19 +834,6 @@ nav .menu-aksi {
     }
 
     /* Kategori */
-
-    /* rekomdeasi */
-    .harga {
-        font-size: 14px;
-    }
-
-    /* Detail Produk */
-
-    .path {
-        text-decoration: none;
-        margin-top: 4rem;
-        margin-left: 0.5rem;
-    }
 }
 
 
@@ -1093,123 +1127,7 @@ nav .menu-aksi {
 
     /* more */
 
-
-    /* Start Detail-Produk */
-    .path {
-        display: none;
-    }
-
-    /* Info Produk Start */
-    .ip-title {
-        font-size: 18px;
-    }
-
-    .ip-harga {
-        font-size: 18px;
-    }
-
-    .line-detail {
-        border-top: 2px solid #C1C1C1;
-        border-bottom: 2px solid #C1C1C1;
-        width: 95%;
-        margin: auto;
-        height: 10px;
-        margin-bottom: 2rem;
-    }
-
-    .ip-lokasi {
-        position: relative;
-        width: 100%;
-        gap: 27px;
-    }
-
-    .icon-lokasi {
-        position: relative;
-        width: 32.89px;
-        height: 24.85px;
-    }
-
-    .ip-alamat {
-        position: relative;
-        font-size: 18px;
-        color: #6a747b;
-        line-height: 140%;
-    }
-
-    .ip-kalender {
-        position: relative;
-        width: 100%;
-        gap: 27px;
-    }
-
-    .icon-kalender {
-        position: relative;
-        width: 32px;
-        height: 32px;
-    }
-
-    .ip-tanggal {
-        position: relative;
-        font-size: 18px;
-        color: #6a747b;
-        line-height: 140%;
-    }
-
-    .ip-wrapper {
-        display: flex;
-        justify-content: end;
-    }
-
-    .ip-wrapper button {
-        border: none;
-    }
-
-    .btn-nego {
-        width: 136px;
-        height: 45px;
-        padding: 4px 21px;
-        border-radius: 10px;
-        background: #007AFF;
-
-        color: #FFF;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 140%;
-        transition: background-color 0.2s ease;
-    }
-
-    .btn-nego:hover {
-        background-color: #2196F3;
-    }
-
-    .btn-wishlist {
-        width: 55px;
-        height: 45px;
-        border-radius: 10px;
-        background: #007AFF;
-        transition: background-color 0.2s ease;
-    }
-
-    .btn-wishlist svg {
-        color: #FFF;
-        width: 30px;
-    }
-
-    .btn-wishlist:hover {
-        background-color: #2196F3;
-    }
-
-    .btn-wishlist img {
-        margin-top: -3px;
-        margin-left: -5px;
-        width: 25px;
-        height: 14.583px;
-    }
-
-    /* Info Produk End */
-    /* End Detail-Produk */
-
-    /* Start Footer */
+    /* Footer */
     .footer-start {
         padding: 60px 50px;
         margin-top: 3rem;
